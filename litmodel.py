@@ -52,7 +52,7 @@ class LitModel(pl.LightningModule):
         print(f"Unique tokens in vocabulary: {len(self.SHRD.vocab)}")
         # print(f"Unique tokens in source vocabulary: {len(SRC.vocab)}")
         # print(f"Unique tokens in target vocabulary: {len(TRG.vocab)}")
-        
+        print(self.SHRD.vocab.itos[0])
                         
         self.BATCH_SIZE = configs.batchSize
 
